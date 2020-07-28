@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ronnel Jones, Junior Developer</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap-4.4.1-dist/css/bootstrap.min.css"
+    />
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONTAWESOME -->
+    <script
+      src="https://kit.fontawesome.com/8e7b35e3c5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img
+          src="assets/images/ronnel-logo-transparent.png"
+          alt="" />
+      </div>
+      <!-- Nav -->
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Introduction-->
+    <section class="intro" id="home">
+      <h1 class="section-title section-title--intro">
+        Hi. I am <strong>Ronnel Jones.</strong>
+      </h1>
+      <p class="section-subtitle section-subtitle--intro">front-end dev</p>
+      <img
+        src="assets/images/Ronnel LinkedIn.JPG"
+        alt="Ronnel Smiling"
+        class="intro-img"
+      />
+    </section>
+
+    <!-- Services -->
+    <section class="my-services" id="service">
+      <h2 class="section-title section-title--services">What I Do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Design + Development</h3>
+          <p>
+            Cake gingerbread tootsie roll lollipop gingerbread jujubes candy
+            canes. Cake donut sugar plum pie toffee bonbon. Jelly beans
+            cheesecake lollipop pudding jelly.
+          </p>
+        </div>
+        <!-- /service-->
+        <div class="service">
+          <h3>Wordpress</h3>
+          <p>
+            Bear claw candy fruitcake candy. Danish cupcake cupcake sweet tart
+            muffin candy canes. Liquorice cake cake sugar plum jelly-o. Pastry
+            gummies lollipop sugar plum muffin caramels.
+          </p>
+        </div>
+        <!-- /service-->
+        <div class="service">
+          <h3>E-Commerce</h3>
+          <p>
+            Muffin topping cookie cotton candy tart tart. Cake gummies oat cake
+            icing lollipop gummi bears carrot cake. Fruitcake muffin danish
+            carrot cake caramels.
+          </p>
+        </div>
+        <!-- /service-->
+      </div>
+      <!-- <a href="#projects" class="btn">My Work</a> -->
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+      <h2 class="section-title section-title--about">About Ronnel</h2>
+      <p class="section-subtitle section-subtitle--about">
+        Junior Developer moving to Toronto, Ontario, Canada in 2021
+      </p>
+      <div class="about-me--body">
+        <p>
+          Sugar plum pudding jelly carrot cake chocolate pastry halvah carrot
+          cake. Cookie tart cheesecake sweet gummi bears liquorice dessert chupa
+          chups. Chocolate liquorice sesame snaps oat cake lemon drops oat cake
+          candy.
+        </p>
+        <p>
+          Sugar plum pudding jelly carrot cake chocolate pastry halvah carrot
+          cake. Cookie tart cheesecake sweet gummi bears liquorice dessert chupa
+          chups. Chocolate liquorice sesame snaps oat cake lemon drops oat cake
+          candy.
+        </p>
+      </div>
+      <img
+        src="assets/images/Ronnel.jpg"
+        alt="Smiling Ronnel"
+        class="about-me--img"
+      />
+    </section>
+
+    <!-- Work -->
+    <section class="my-projects" id="projects">
+      <h2 class="section-title section-title--projects">My Projects</h2>
+      <p class="section-subtitle section-subtitle--projects"></p>
+      <div class="portfolio">
+        <a href="#" class="portfolio--item">
+          <img
+            src="assets/images/portitem1.jpeg"
+            alt=""
+            class="portfolio--img"
+          />
+        </a>
+        <a href="#" class="portfolio--item">
+          <img
+            src="assets/images/portitem2.jpeg"
+            alt=""
+            class="portfolio--img"
+          />
+        </a>
+        <a href="#" class="portfolio--item">
+          <img
+            src="assets/images/portitem3.jpeg"
+            alt=""
+            class="portfolio--img"
+          />
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <h2 class="section-title section-title--about">Get Ahold of Me</h2>
+      <form name="contact" action="contact" method="POST" data-netlify-recaptcha="true" class="contact-form" method="POST">
+        <p class="contact--item">Name:</p><input type="text" name="name" placeholder="Name">
+        <p class="contact--item">Email:</p><input type="text" name="mail" placeholder="Email">
+        <p class="contact--item">Subject:</p><input type="text" name="subject" placeholder="Subject">
+        <p class="contact--item">Message:</p><textarea name="message" id="" cols="60" rows="7" placeholder="Message"></textarea>
+        <br><button type="submit" name="Submit" class="contact-btn">SEND MAIL</button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>&#169; 2020. Ronnel Jones</p>
+      <p>All Rights Reserved.</p>
+      <ul class="social-list">
+   <li class="social-list--item">
+          <a href="https://www.twitter.com/ronnelcodes/" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a></li>
+          <li class="social-list--item">
+          <a href="https://www.instagram.com/ronnelcodes/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a></li>
+          <li class="social-list--item">
+            <a href="https://www.linkedin.com/in/ronnel-jones/" target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a></li>
+        </li>
+      </ul>
+    </footer>
+    <!-- JS -->
+    <script src="assets\js\main.js"></script>
+  </body>
+</html>
