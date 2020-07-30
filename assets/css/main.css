@@ -423,8 +423,13 @@ strong {
 .contact p {
   color: var(--clr-light);
 }
+
 .contact--item {
   font-weight: var(--fw-bold);
+}
+
+.recaptcha {
+  text-align: center;
 }
 
 .contact-btn {
