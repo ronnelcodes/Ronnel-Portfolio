@@ -50,12 +50,13 @@
       <h1 class="section-title section-title--intro">
         Hi. I am <strong>Ronnel Jones.</strong>
       </h1>
-      <p class="section-subtitle section-subtitle--intro">front-end dev</p>
+      <p class="section-subtitle section-subtitle--intro">self-taught<br>front-end dev</p>
       <img
         src="assets/images/Ronnel LinkedIn.JPG"
         alt="Ronnel Smiling"
         class="intro-img"
       />
+      <br>
     </section>
 
     <!-- Services -->
@@ -152,11 +153,12 @@
     <!-- Contact -->
     <section class="contact" id="contact">
       <h2 class="section-title section-title--about">Get Ahold of Me</h2>
-      <form name="contact" action="contact" method="POST" data-netlify-recaptcha="true" class="contact-form" method="POST">
+      <form action="POST" data-netlify="true" class="contact-form" method="POST">
         <p class="contact--item">Name:</p><input type="text" name="name" placeholder="Name">
-        <p class="contact--item">Email:</p><input type="text" name="mail" placeholder="Email">
+        <p class="contact--item">Email:</p><input type="email" name="email" placeholder="Email">
         <p class="contact--item">Subject:</p><input type="text" name="subject" placeholder="Subject">
-        <p class="contact--item">Message:</p><textarea name="message" id="" cols="60" rows="7" placeholder="Message"></textarea>
+        <p class="contact--item">Message:</p><textarea name="message" id="message" cols="60" rows="7" placeholder="Message"></textarea>
+        <div data-netlify-recaptcha="true"></div>
         <br><button type="submit" name="Submit" class="contact-btn">SEND MAIL</button>
       </form>
     </section>
