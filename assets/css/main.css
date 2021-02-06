@@ -381,6 +381,10 @@ strong {
 }
 
 /*=====PROJECTS=====*/
+.disabled {
+  pointer-events:none;
+}
+
 .my-projects {
   background-color: var(--clr-dark);
   color: var(--clr-light);
