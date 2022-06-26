@@ -1,3 +1,4 @@
+<!--=====coded by RonnelCodes====-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,209 +6,353 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ronnel Jones, Web Developer</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/normalize.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="assets/css/style.css" /> 
+    <!-- BOOTSTRAP 
     <link
       rel="stylesheet"
       href="assets/bootstrap-4.4.1-dist/css/bootstrap.min.css"
-    />
+    /> -->
     <!-- FONTS -->
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;900&display=swap"
       rel="stylesheet"
     />
     <!-- FONTAWESOME -->
-    <script
-      src="https://kit.fontawesome.com/8e7b35e3c5.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- FAVICON -->
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
   </head>
-  <body>
-    <header class="header">
-      <div class="logo">
-        <img
-          src="assets/images/ronnel-logo-transparent.png"
-          alt="" />
+  <body class="main-content">
+    <header class="section sec1 header active" id="home">
+      <div class="header-content">
+        <div class="left-header">
+          <div class="h-shape"></div>
+          <div class="image">
+            <img src="assets/images/ronizzle.png" class="home-img" alt="Ronnel" width="500" height="500">
+          </div>
+        </div>
+        <div class="right-header">
+          <h1 class="name">
+            Hi, I'm <span>Ronnel Jones,</span>
+            A Web Developer.
+          </h1>
+          <br>
+          <p>
+            I am a Web Developer that creates functional sites.
+          </p>
+          <div class="btn-container">
+            <a href="#" class="main-btn">
+              <span class="btn-text">Download Resume</span>
+              <span class="btn-icon"><i class="fas fa-download"></i></span>
+            </a>
+          </div>
+        </div>
       </div>
-      <!-- Nav -->
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
-          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
+     <!--<i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fas fa-rss"></i>--> 
     </header>
-
-    <!--Introduction-->
-    <section class="intro" id="home">
-      <h1 class="section-title section-title--intro">
-        Hi. I am <strong>Ronnel Jones.</strong>
-      </h1>
-      <p class="section-subtitle section-subtitle--intro">front-end<br>web dev</p>
-      <img
-        src="assets/images/Ronnel 3.png"
-        alt="Ronnel Smiling"
-        class="intro-img"
-      />
-      <br>
-    </section>
-
-    <!-- Services -->
-    <section class="my-services" id="service">
-      <h2 class="section-title section-title--services">What I Do</h2>
-      <div class="services">
-        <div class="service">
-          <h3>Design + Development</h3>
-          <p>
-            Responsive websites built for an ideal user experience that accomplishes your business objectives.
-          </p>
+    <main>
+      <!-- ABOUT -->
+      <section class="section sec2" id="about">
+        <div class="main-title">
+          <h2>About <span id="area">Me</span><span class="bg-text">my stats</span></h2>
+           <div class="about-container">
+             <div class="left-about">
+              <p>
+                My interest in creating things started WAY back in the good ol' days of MySpace. Back then, you added basic HTML and CSS.
+                <br>
+                <br>
+                Fast-forward to 2017, my love for creating websites intensified and I started creating more and more. My current target is building accessible services and experiences for various clientele
+              </p>
+             </div>
+             <div class="btn-container">
+              <a href="#" class="main-btn">
+                <span class="btn-text">Download Resume</span>
+                <span class="btn-icon"><i class="fas fa-download"></i></span>
+              </a>
+            </div>
+          <!-- <div class="right-about">
+            <div class="about-item">
+              <div class="abt-text">
+                <p class="large-text">
+                  <div class="btn-container">
+                    <a href="#" class="main-btn">
+                      <span class="btn-text">Download Resume</span>
+                      <span class="btn-icon"><i class="fas fa-download"></i></span>
+                    </a>
+                  </div>
+                  <img src="assets/images/ronnl.png" alt="about-Ronnel" width="500" height="500">
+                </p>
+              </div>
+            </div>
+          </div> -->
+        <div class="about-stats">
+          <h4 class="stat-title">My Skills</h4>
+          <div class="progress-bars">
+            <div class="progress-bar">
+              <p class="prog-title">html5</p>
+              <div class="progress-con">
+                <p class="prog-text">90%</p>
+                <div class="progress">
+                  <span class="skills html"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">css</p>
+              <div class="progress-con">
+                <p class="prog-text">70%</p>
+                <div class="progress">
+                  <span class="skills css"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">jquery</p>
+              <div class="progress-con">
+                <p class="prog-text">60%</p>
+                <div class="progress">
+                  <span class="skills jquery"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">wordpress</p>
+              <div class="progress-con">
+                <p class="prog-text">70%</p>
+                <div class="progress">
+                  <span class="skills wp"></span>
+                </div>
+              </div>
+          </div>
+          </div>
         </div>
-        <!-- /service-->
-        <div class="service">
-          <h3>Wordpress</h3>
-          <p>
-            Administer your website utilizing the web's most well known content management system.
-          </p>
+      </div>
         </div>
-        <!-- /service
-        <div class="service">
-          <h3>E-Commerce</h3>
-          <p>
-            Muffin topping cookie cotton candy tart tart. Cake gummies oat cake
-            icing lollipop gummi bears carrot cake. Fruitcake muffin danish
-            carrot cake caramels.
+      </section>
+      <!-- PORTFOLIO -->
+      <section class="section sec3" id="portfolio">
+        <div class="main-title">
+          <h2>My <span id="area">Portfolio</span><span class="bg-text">my work</span></h2>
+          </div>
+          <p class="port-text">
+            Here is some of the work I have done in the languages I know.
           </p>
-        </div> -->
-        <!-- /service-->
-      </div>
-    </section>
+          <div class="portfolios">
+            <div class="port-item">
+              <div class="image">
+                <img src="assets/images/Portfolio Site.png" alt="Old-Portfolio">
+              </div>
+              <div class="hover-item">
+                <h3>Project Source</h3>
+                <div class="icons">
+                  <a href="www.google.com" target="_blank" id="icon">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="port-item">
+              <div class="image">
+                <img src="assets/images/Spark Church.png" alt="Spark-Church">
+              </div>
+              <div class="hover-item">
+                <h3>Project Source</h3>
+                <div class="icons">
+                  <a href="www.google.com" target="_blank" id="icon">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="port-item">
+              <div class="image">
+                <img src="assets/images/SC Interns.png" alt="Interns">
+              </div>
+              <div class="hover-item">
+                <h3>Project Source</h3>
+                <div class="icons">
+                  <a href="www.google.com" target="_blank" id="icon">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="port-item">
+              <div class="image">
+                <img src="assets/images/Belinda.png" alt="Belinda">
+              </div>
+              <div class="hover-item">
+                <h3>Project Source</h3>
+                <div class="icons">
+                  <a href="www.google.com" target="_blank" id="icon">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="port-item">
+              <div class="image">
+                <img src="assets/images/RonnelCodes.png" alt="Link-Site">
+              </div>
+              <div class="hover-item">
+                <h3>Project Source</h3>
+                <div class="icons">
+                  <a href="www.google.com" target="_blank" id="icon">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="port-item">
+              <div class="image">
+                <img src="assets/images/RonnJon.png" alt="Photog">
+              </div>
+              <div class="hover-item">
+                <h3>Project Source</h3>
+                <div class="icons">
+                  <a href="www.google.com" target="_blank" id="icon">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
 
-    <!-- About Me -->
-    <section class="about-me" id="about">
-      <h2 class="section-title section-title--about">About Ronnel</h2>
-      <p class="section-subtitle section-subtitle--about">
-        Software Engineer pursuing a career in Web Development while building great applications
-      </p>
-      <div class="about-me--body">
-        <p>
-          I remember the days of MySpace where you could modify your profile and insert playlists and change colors. That was the first time I dabbled in any form of web design.
-        </p>
-        <p>
-          Fast forward to 2017, when I knew my life needed a change and I came across a YouTuber who was documenting his career change and at the time, I didn't know that I was so similar to this man. I followed into self-taught web development learning and haven't stopped since.
-        </p>
-        <p>
-          Now, I am searching for a web development career while continuing to build amazing websites.
-        </p>
-      </div>
-      <img
-        src="assets/images/Ronnel.jpg"
-        alt="Smiling Ronnel"
-        class="about-me--img"
-      />
-    </section>
+          </div>
+      </section>
+      <!-- BLOG -->
+      <section class="section sec4" id="blog">
+        <div class="blog-content">
+          <div class="main-title">
+            <h2>My <span id="area">Blog</span><span class="bg-text">my thoughts</span></h2>
+            </div>
+            <div class="blogs">
+              <div class="blog">
+                <img src="assets/images/Blog3.png" alt="3">
+                <div class="blog-text">
+                  <h4>Code of the Week</h4>
+                  <p>Sometimes a feeling is all we humans have to go on. We're a most promising species, Mr. Spock, as predators go.</p>
+                </div>
+              </div>
+              <div class="blog">
+                <img src="assets/images/Blog2.png" alt="2">
+                <div class="blog-text">
+                  <h4>Boot Camps</h4>
+                  <p>Sometimes a feeling is all we humans have to go on. We're a most promising species, Mr. Spock, as predators go.</p>
+                </div>
+              </div>
+              <div class="blog">
+                <img src="assets/images/Blog1.png" alt="1">
+                <div class="blog-text">
+                  <h4>Java Script Learning</h4>
+                  <p>Sometimes a feeling is all we humans have to go on. We're a most promising species, Mr. Spock, as predators go.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <!-- CONTACT -->
+      <section class="section sec5" id="contact">
+        <div class="main-title">
+          <div class="contact-container">
+            <h2>Contact <span id="area">Me</span><span class="bg-text">reach out</span></h2>            
+          </div>
+          <div class="contact-content-con">
+            <div class="left-contact">
+              <h4>Let's Connect</h4>
+              <p>Sometimes a feeling is all we humans have to go on. We're a most promising species, Mr. Spock, as predators go.</p>
+              <div class="contact-info">
+                <div class="contact-item">
+                  <div class="icon">
+                     <i class="fas fa-map-marker-alt"></i>
+                     &nbsp;Location
+                  </div>
+                  <p>: Henderson, NV, United States</p>
+                </div>
+                <div class="contact-item">
+                  <div class="icon">
+                     <i class="fas fa-envelope"></i>
+                     &nbsp;Email
+                  </div>
+                  <p>: contact@ronnel.codes/p>
+                </div>
+                <div class="contact-item">
+                  <div class="icon">
+                     <i class="fas fa-phone-alt"></i>
+                     &nbsp;Phone
+                  </div>
+                  <p>+1-702-602-8940</p>
+                </div>
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-globe-americas"></i>
+                    &nbsp;Languages
+                  </div>
+                  <p>English</p>
+                </div>
+              </div>
+            </div>
+            <div class="contact-icons">
+              <div class="contact-icon">
+                <a href="www.instagram.com/ronnelcodes" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="www.twitter.com/ronnelcodes" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="www.github.com/ronnelcodes" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="right-contact">
+              <form action="" id="myForm" class="contact-form">
+                <div class="input-control ic2">
+                  <input type="text" name='name' id="form-name" required placeholder="Name">
+                  <input type="email" name='email' id="form-email" required placeholder="Email">
+                </div>
+                <input type="hidden" name="_next" value="https://ronnel.codes/thanks.html">
+                <div class="input-control">
+                  <input type="text" name='subject' id="form-subject" required placeholder="Subject">
+                </div>
+                <div class="input-control">
+                  <textarea name="message" id="form-mess" placeholder="Message" id="" cols="15" rows="8"></textarea>
+                </div>
+                <div class="submit-btn" id="btn">
+                  <a href="#" class="main-btn">
+                    <span class="btn-text">Submit</span>
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-    <!-- Work -->
-    <section class="my-projects" id="projects">
-      <h2 class="section-title section-title--projects">My Projects</h2>
-      <p class="section-subtitle section-subtitle--projects"></p>
-      <div class="portfolio">
-        <a href="http://belindamua.ml" target="_blank" class="portfolio--item">
-          <img
-            src="assets/images/Belinda.png" style="width:800px;height:500px;"
-            alt=""
-            class="portfolio--img"
-          />
-        </a>
-        <a href="https://ronnel.netlify.app/" target="_blank" class="portfolio--item">
-          <img
-            src="assets/images/RonnelPhoto.png" style="width:800px;height:500px;"
-            alt=""
-            class="portfolio--img"
-          />
-        </a>
-        <a href="https://ronneljones.github.io/" target="_blank" class="portfolio--item">
-          <img
-            src="assets/images/RonnelCodes.png" style="width:800px;height:500px;"
-            alt=""
-            class="portfolio--img"
-          />
-        </a>
+    <div class="controls">
+      <div class="control control-1 active-btn" data-id="home">
+        <i class="fas fa-home"></i>
       </div>
-      <div class="portfolio">
-        <a href="https://sparkchurch.ml/" target="_blank" class="portfolio--item">
-          <img
-            src="assets/images/Spark-Church.png" style="width:800px;height:500px;"
-            alt=""
-            class="portfolio--img"
-          />
-        </a>
-        <a href="https://scinterns.ml/" target="_blank" class="portfolio--item">
-          <img
-            src="assets/images/SC-Interns.png" style="width:800px;height:500px;"
-            alt=""
-            class="portfolio--img"
-          />
-        </a>
-        <a href="https://ronnjonphotog.com/" target="_blank" class="portfolio--item">
-          <img
-            src="assets/images/ronnjonphotog.png" style="width:800px;height:500px;"
-            alt=""
-            class="portfolio--img"
-          />
-        </a>
-        <!-- <a href="#" target="_blank" class="disabled">
-          <img
-            src="assets/images/ronnjonphotog.png" style="width:1200px;height:209px;"
-            alt=""
-            class="portfolio--img"
-          />
-        </a> -->
+      <div class="control control-2" data-id="about">
+        <i class="fas fa-user"></i>
       </div>
-    </section>
+      <div class="control control-3" data-id="portfolio">
+        <i class="fas fa-laptop-code"></i>
+      </div>
+      <div class="control control-4" data-id="blog">
+        <i class="fas fa-journal-whills"></i>
+      </div>
+      <div class="control control-5" data-id="contact">
+        <i class="fas fa-inbox"></i>
+      </div>
+    </div>
 
-    <!-- Contact -->
-    <section class="contact" id="contact">
-      <h2 class="section-title section-title--about">Get Ahold of Me</h2>
-      <form action="POST" data-netlify="true" class="contact-form" method="POST">
-        <p class="contact--item">Name:</p><input type="text" name="name" placeholder="Name">
-        <p class="contact--item">Email:</p><input type="email" name="email" placeholder="Email">
-        <p class="contact--item">Subject:</p><input type="text" name="subject" placeholder="Subject">
-        <p class="contact--item">Message:</p><textarea name="message" id="message" cols="60" rows="7" placeholder="Message"></textarea>
-        <div class="recaptcha" data-netlify-recaptcha="true"></div>
-        <br><button type="submit" name="Submit" class="contact-btn">SEND MAIL</button>
-      </form>
-    </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <p>&#169; 2020. Ronnel Jones</p>
-      <p>All Rights Reserved.</p>
-      <ul class="social-list">
-   <li class="social-list--item">
-          <a href="https://www.twitter.com/ronnelcodes/" target="_blank"
-            ><i class="fab fa-twitter"></i
-          ></a></li>
-          <li class="social-list--item">
-          <a href="https://www.instagram.com/ronnelcodes/" target="_blank"
-            ><i class="fab fa-instagram"></i
-          ></a></li>
-          <li class="social-list--item">
-            <a href="https://www.linkedin.com/in/ronnel-jones/" target="_blank"
-            ><i class="fab fa-linkedin-in"></i
-          ></a></li>
-        </li>
-      </ul>
-    </footer>
     <!-- JS -->
-    <script src="assets\js\main.js"></script>
+      <script src="assets/js/index.js"></script>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script src="assets/js/form.js"></script>
   </body>
 </html>
