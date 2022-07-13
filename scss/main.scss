@@ -1,11 +1,12 @@
 @font-face {
-	font-family: HelveticaNeue;
+	font-family: Helvetica Neue;
 	src: url('../fonts/HelveticaNeueLTStd-Lt.otf') format('openface');
 }
 
 * {
 	box-sizing: border-box;
 }
+
 &:root {
 	--color-1: #008D1B;
 	--color-2: #1F2421;
@@ -24,6 +25,7 @@
 	--ronnel: url('../img/Ronnel-NBG.png');
 	--slide-1: url('../img/services.png');
 }
+
 body {
 	background-image: var(--slide-1);
 	background-size: cover;
