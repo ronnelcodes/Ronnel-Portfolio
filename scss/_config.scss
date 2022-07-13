@@ -1,0 +1,25 @@
+//COLORS
+$first-color: #1F2421;
+$second-color: #008D1B;
+$third-color: #D1DEDE;
+$fourth-color: #a29c9b;
+
+//BACKGROUND IMAGE
+$show-home-image: true; // Enable/Disable
+
+//Home Background Image
+$home-image: url('../dist/img/services.jpeg');
+$bg-opacity: 0.9;
+
+//TRANSITIONS
+@mixin tran1 {
+    transition: all .4s ease-in-out;
+}
+
+@mixin tran2 {
+    transition: all .3s ease-out;
+}
+
+@mixin tran3 {
+    transition: all .2s ease-in-out;
+}

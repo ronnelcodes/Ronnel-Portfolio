@@ -12,6 +12,8 @@
       rel="stylesheet"
       href="assets/bootstrap-4.4.1-dist/css/bootstrap.min.css"
     /> -->
+     <!-- JQUERY -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- FONTS -->
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;900&display=swap"
@@ -20,16 +22,65 @@
     <!-- FONTAWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   </head>
-  <body>
-    <h1>
-      Hi, I'm <span>Ronnel Jones,</span>
-      A Web Developer.
+  <body id="bg-img">
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <header>
+    <nav class="menu">
+      <div class="menu-brand">
+        <div class="portrait"></div>
+      </div>
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <a href="/" class="nav-link">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/" class="nav-link">
+            About Me
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/" class="nav-link">
+            My Projects
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/" class="nav-link">
+            How to Reach Me
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home">
+    <h1 class="lg-head">
+      Ronnel <span class="text-second">Jones</span>
     </h1>
-    <br>
-    <p>
-      I am a Web Developer that creates functional sites.
-    </p>
-  </body>
+    <h2 class="sm-head">
+      Web Developer
+    </h2>
+    <div class="icons">
+      <a href="#">
+        <i class="fab fa-twitter fa-2x"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+    </div>
+  </main>
+     <!-- JQUERY -->
+     <script src="js/main.js"></script>
+    </body>
 </html>

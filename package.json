@@ -1,21 +1,21 @@
 {
-  "name": "ronnel-portfolio",
+  "name": "portfolio-copy",
   "version": "1.0.0",
-  "description": "Responsive portfolio website",
+  "description": "Responsive Portfolio",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ronneljones/Ronnel-Portfolio.git"
+    "url": "git+https://github.com/ronnelcodes/Portfolio.git"
   },
-  "author": "Ronnel Codes",
+  "author": "Ronnel Jones",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ronneljones/Ronnel-Portfolio/issues"
+    "url": "https://github.com/ronnelcodes/Portfolio/issues"
   },
-  "homepage": "https://github.com/ronneljones/Ronnel-Portfolio#readme",
+  "homepage": "https://github.com/ronnelcodes/Portfolio#readme",
   "dependencies": {
     "node-sass": "^7.0.1"
   }
