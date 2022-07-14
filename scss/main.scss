@@ -1,137 +1,45 @@
+@import 'config';
+@import 'menu';
+
 @font-face {
-	font-family: Helvetica Neue;
-	src: url('../fonts/HelveticaNeueLTStd-Lt.otf') format('openface');
+	font-family: 'HelveticaNeue';
+	src: url('../dist/fonts/HelveticaNeueLTStd-Lt.otf') format('openface');
 }
 
 * {
 	box-sizing: border-box;
 }
 
-&:root {
-	--color-1: #008D1B;
-	--color-2: #1F2421;
-	--color-3: #D1DEDE;
-	--color-4: #854D27;
-	--color-5: #877666;
-	--color-6: #9197ae;
-	--color-7: #a29c9b;
-	--color-8: #FB8B24;
-	--color-9: #6FFFE9;
-	--color-10: rgba(209, 222, 222, 0.13);
-	--transition1: all .4s ease-in-out;
-	--transition2: all .3s ease-out;
-	--transition3: all .2s ease-in-out;
-	--shadow: 0 3px 15px rgba(0, 0, 0, .6);
-	--ronnel: url('../img/Ronnel-NBG.png');
-	--slide-1: url('../img/services.png');
-}
-
 body {
-	background-image: var(--slide-1);
-	background-size: cover;
-	background-attachment: fixed;
+	@include ground;
+	background-color: $first-color;
 	font-size: 1.1rem;
-	color: var(--color-3);
+	color: $third-color;
 	font-family: 'HelveticaNeue', sans-serif;
-	transition: var(--transition1);
 	margin: 0;
 	height: 100%;
 	line-height: 1.5;
-}
-
-/*==== MENU BUTTON ====*/
-.menu-btn {
-	position: absolute;
-	z-index: 3;
-	right: 35px;
-	top: 35px;
-	cursor: pointer;
-	transition: var(--transition2);
-	.btn-line {
-		width: 28px;
-		height: 3px;
-		margin: 0 0 5px 0;
-		background-color: var(--color-3);
-	}
-}
-.menu-btn.close {
-	transform: rotate(180deg);
-	.btn-line {
-		&:nth-child(1) {
-			background-color: var(--color-1);
-			transform: rotate(45deg) translate(5px, 5px);
-			transition: var(--transition3);
-		}
-		&:nth-child(2) {
-			opacity: 0;
-			transition: var(--transition3);
-		}
-		&:nth-child(3) {
-			background-color: var(--color-1);
-			transform: rotate(-45deg) translate(7px, -6px);
-			transition: var(--transition3);
-		}
-	}
-}
-
-.menu {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	opacity: 0.9;
-	visibility: hidden;
-	.menu-brand {
-		display: flex;
-		flex-flow: column wrap;
-		align-items: center;
-		justify-content: center;
-		float: right;
-		width: 50;
-		height: 100vh;
-		overflow: hidden;
-	}
-
-	.menu-nav {
-		display: flex;
-		flex-flow: column wrap;
-		align-items: center;
-		justify-content: center;
-		float: right;
-		width: 50;
-		height: 100vh;
-		overflow: hidden;
-		margin: 0;
-		padding: 0;
-		color: var(--color-2);
-		filter: brightness(85%);
-	}
-}
-
-.menu.show {
-	visibility: visible;
 }
 
 /*==== HEADINGS ====*/
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	font-weight: 400;
-}
-
-h1.lg-head {
+  
+	&.lg-head {
 	font-size: 6rem;
-}
+    }
 
-h2.sm-head {
+  &.sm-head {
 	margin-bottom: 2rem;
 	padding: 0.2rem 1rem;
-	background-color: rgba(9, 141, 61, 0.15);
+	background-color: rgba(lighten($second-color, 2), 0.5)
+	}
 }
 
 a {
 	text-decoration: none;
-	color: var(--color-3);
-	font-weight: 600;
-	text-transform: uppercase;
+	color: $third-color;
 }
 
 header {
@@ -141,7 +49,7 @@ header {
 }
 
 .text-second {
-	color: var(--color-1);
+	color: $second-color;
 }
 
 main {
@@ -152,17 +60,16 @@ main {
 		a {
 			padding: 1rem;
 			&:hover {
-				color: var(--color-1);
-				transition: var(--transition);
+				color: $second-color;
+				@include tran1();
 				transform: scale(1.5);
 			}
 		}
 	}
+	&#home {
+		overflow: hidden;
+		h1 {
+			margin-top: 20vh;
+		}
 }
-
-main#home {
-	overflow: hidden;
-	h1 {
-		margin-top: 20vh;
-	}
 }
