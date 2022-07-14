@@ -1,2 +1,0 @@
-# Ronnel-Portfolio
- Portfolio site
